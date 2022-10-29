@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	Server := server.NewServer("tcp4", "127.0.0.1", 8001)
+	Server := server.NewServer()
 	Server.AddRouter(&router.AddRouter{})
 	Server.Server()
 }
